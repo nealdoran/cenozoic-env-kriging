@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.so
+
+# Environments
+.env
+.venv
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data — real analysis data never committed
+# Only data/sample_observations.csv is tracked
+data/*.db
+data/*.sqlite
+data/*.npy
+data/*.tif
+data/*.geojson
+!data/sample_observations.csv
+
+# Figures — only demo figures committed
+# Real analysis figures kept off repo until publication
+figures/*
+!figures/demo_*.png
+!figures/.gitkeep
+
+# Credentials / connection strings (never commit these)
+.env
+*.env
+secrets.py
+config_local.py
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
